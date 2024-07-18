@@ -14,7 +14,7 @@ datasource db {
   directUrl = env("DIRECT_URL")
 }
 
-model diary{
+model diaries{
   id          Int      @id @default(autoincrement())
   title       String
   content     String

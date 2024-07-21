@@ -16,3 +16,12 @@ model diaries {
   updatedAt DateTime @updatedAt
   date      DateTime @db.Date
 }
+
+model diary {
+  id        Int      @id @default(autoincrement())
+  title     String
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  date      DateTime @db.Date
+}

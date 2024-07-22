@@ -22,7 +22,20 @@ export default function Home(props: Props) {
     console.log(props),
     (
       <main>
-        <h1>diary App</h1>
+        <h1 className="text-5xl font-bold">diary App</h1>
+        <h2 className="text-4xl font-semibold">日記一覧</h2>
+        <div className="p-8 flex flex-wrap gap-4">
+          {props.diaries.map((diary) => (
+            <div
+              key={diary.id}
+              className="w-320px border border-gray-600 rounded-lg p-4"
+            >
+              <h3 className="text-lg font-bold mb-2">{diary.title}</h3>
+              <p className="mb-2">{diary.content}</p>
+              <p>{diary.createdAt}</p>
+            </div>
+          ))}
+        </div>
       </main>
     )
   );

@@ -1,6 +1,6 @@
 import { Button } from "./button";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 
 export default function New() {
   const router = useRouter();
@@ -11,6 +11,7 @@ export default function New() {
     const form = new FormData(e.currentTarget);
     const title = form.get("title") as string;
     const content = form.get("content") as string;
+    const date = form.get("date") as string;
 
     if (!title || !content) {
       setHasError(true);
@@ -39,6 +40,10 @@ export default function New() {
         <div>
           <label htmlFor="title">タイトル</label>
           <input type="text" name="title" />
+        </div>
+        <div>
+          <label htmlFor="content">日付け</label>
+          <input type="date" name="date" />
         </div>
         <div>
           <label htmlFor="content">日記</label>

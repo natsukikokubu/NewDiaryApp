@@ -1,7 +1,7 @@
 export type Diary = {
   id: number;
-  title: String;
-  content: String;
+  title: string;
+  content: string;
   createdAt: string;
   updatedAt: string;
   date: string;

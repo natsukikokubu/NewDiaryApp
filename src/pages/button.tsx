@@ -16,7 +16,11 @@ export const Button = ({
     large: "btn-large",
   };
   return (
-    <button onClick={onClick} {...rest}>
+    <button
+      className="bg-pink-400 hover:bg-pink-600 text-white font-bold py-2 px-6 rounded-full"
+      onClick={onClick}
+      {...rest}
+    >
       {children}
     </button>
   );

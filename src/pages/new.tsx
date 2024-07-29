@@ -32,22 +32,39 @@ export default function New() {
   };
 
   return (
-    <main>
-      <h1>Diary App</h1>
-      <h2>日記を追加</h2>
+    <main className="text-gray-700">
+      <h1 className="text-5xl font-bold my-4 ">Diary App</h1>
+      <h2 className="text-4xl font-semibold my-4">日記を追加</h2>
 
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="title">タイトル</label>
-          <input type="text" name="title" />
+          <label className="text-lg font-bold mb-2" htmlFor="title">
+            タイトル
+          </label>
+          <input
+            className="border border-gray-400 rounded-lg p-4 my-4"
+            type="text"
+            name="title"
+          />
         </div>
         <div>
-          <label htmlFor="content">日付け</label>
-          <input type="date" name="date" />
+          <label className="text-lg font-bold mb-2" htmlFor="content">
+            日付け
+          </label>
+          <input
+            className="border border-gray-400 rounded-lg p-4 my-4"
+            type="date"
+            name="date"
+          />
         </div>
-        <div>
-          <label htmlFor="content">日記</label>
-          <textarea name="content" />
+        <div className="mb-6">
+          <label className="text-lg font-bold mb-2" htmlFor="content">
+            日記
+          </label>
+          <textarea
+            className="border border-gray-400 rounded-lg p-4 my-4"
+            name="content"
+          />
         </div>
 
         <Button size="medium" type="submit">

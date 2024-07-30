@@ -65,13 +65,13 @@ export default function Home(props: Props) {
 
             <div>
               <a
-                className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-6 rounded-full"
+                className="border border-x-2 border-y-2 border-blue-700  text-gray-800 font-bold py-2 px-6 rounded-full"
                 href={`/${diary.id}/edit`}
               >
                 編集
               </a>
               <button
-                className="bg-blue-500 hover:bg-blue-800 text-white font-bold py-2 px-6 rounded-full"
+                className="border border-x-2 border-y-2 border-blue-700  text-gray-800 font-bold py-2 px-6 rounded-full"
                 onClick={() => handleClickDeleteButton(diary.id)}
               >
                 削除

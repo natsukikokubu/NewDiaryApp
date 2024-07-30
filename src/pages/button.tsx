@@ -17,7 +17,7 @@ export const Button = ({
   };
   return (
     <button
-      className="bg-pink-400 hover:bg-pink-600 text-white font-bold py-2 px-6 rounded-full"
+      className="bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-6 rounded-full"
       onClick={onClick}
       {...rest}
     >

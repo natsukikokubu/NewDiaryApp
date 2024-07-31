@@ -1,7 +1,7 @@
 import { getApiBaseUrl } from "../../utils/getApiBaseUrl";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import { Diary } from "../../types/diary";
-import { Button } from "./button";
+import { Button } from "./components/button";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
@@ -43,7 +43,7 @@ export default function Home(props: Props) {
       <div>
         <h2 className="text-4xl font-semibold my-4">日記一覧</h2>
         <Button size="large" onClick={handleClickNewDiary}>
-          日記作成 +
+          + 日記作成
         </Button>
       </div>
       <div>

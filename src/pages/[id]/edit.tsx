@@ -1,4 +1,4 @@
-import { Button } from "../components/button";
+import { Button } from "../../components/button";
 import { Diary } from "../../../types/diary";
 import { getApiBaseUrl } from "../../../utils/getApiBaseUrl";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";

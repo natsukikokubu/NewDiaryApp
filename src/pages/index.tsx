@@ -1,7 +1,7 @@
 import { getApiBaseUrl } from "../../utils/getApiBaseUrl";
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import { Diary } from "../../types/diary";
-import { Button } from "./components/button";
+import { Button } from "../components/button";
 import { useRouter } from "next/router";
 import { useState } from "react";
 

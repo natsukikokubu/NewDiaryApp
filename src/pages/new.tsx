@@ -1,4 +1,4 @@
-import { Button } from "./components/button";
+import { Button } from "../components/button";
 import { useRouter } from "next/router";
 import { FormEvent, useState } from "react";
 
